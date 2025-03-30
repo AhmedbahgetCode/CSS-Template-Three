@@ -165,8 +165,7 @@ header ul li:last-child div input:is(:checked) + label + .mega-menu {
 }
 
 .container .mega-menu ul li a::before {
-  height: 2px;
-  /* display: none; */
+  display: none;
 }
 
 .container .mega-menu ul li::after {
