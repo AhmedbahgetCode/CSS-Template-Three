@@ -200,7 +200,7 @@ header ul li:last-child div input:is(:checked) + label + .mega-menu {
 
 @media (max-width: 800px) {
   header {
-    position: static;
+    position: absolute;
   }
   header .container nav > ul > li:nth-child(-n+3) {
     display: none;
@@ -210,8 +210,12 @@ header ul li:last-child div input:is(:checked) + label + .mega-menu {
     content: "\f0c9";
     font-weight: 900; 
   }
+  header .container .logo a {
+    padding-left: var(--sub-padding);
+  }
 
-  .mega-menu {
+  .container .mega-menu {
+    padding: 10px;
     flex-direction: column;
     align-items: stretch;
     gap: 0;
