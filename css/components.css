@@ -1,3 +1,4 @@
+/* containers */
 .container {
     width: 100%;
     padding-right: 1rem;
@@ -31,19 +32,14 @@
     } 
 }
 
-/* section's padding */
-.section-ptb {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-/* the main heading */
+/* headings */
 .main-heading {
     width: fit-content;
     margin: 0 auto 100px auto;
     padding: 1rem 1.2rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    font-size: clamp(25px, 7vw,2em);
     font-weight: 700;
     color: #121212;
     border: 2px solid black;
@@ -120,13 +116,16 @@
 
 @media (max-width: 425px) {
     .main-heading {
-        color: var(--main-color);
-        border-color: var(--main-color);
         pointer-events: none;
-        font-size: 25px;
     }
     .main-heading::before,
     .main-heading::after {
         display: none;
     }
+}
+
+/* paddings */
+.section-ptb {
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
