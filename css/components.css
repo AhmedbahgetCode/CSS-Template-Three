@@ -45,13 +45,13 @@
     border: 2px solid black;
     position: relative;
     cursor: default;
-    transition: 0s 0s;
+    transition: 0.1s 0s;
 }
 
 .main-heading:hover {
     color: white;
     border-color: transparent;
-    transition: 0.5s 0.3s;
+    transition: 0.5s 0.4s;
 }
 
 .main-heading::before,
@@ -78,13 +78,13 @@
 
 @keyframes main-heading {
     50% {
-        border-radius: 40%;
-        height: 40%;
+        border-radius: 20px;
+        height: 50%;
     }
     100% {
         border-radius: 0;
         height: 100%;
-        width: 100%;
+        width: 75%;
     }
 }
 
@@ -97,9 +97,13 @@
     }
 }
 
+.main-heading:hover::before,
+.main-heading:hover::after {
+    animation: 1s forwards;
+}
+
 .main-heading:hover::before {
-    animation: main-heading-before 0.8s, main-heading 0.8s;
-    animation-fill-mode: forwards;
+    animation-name: main-heading-before, main-heading;
 }
 
 @keyframes main-heading-after {
@@ -112,8 +116,7 @@
 }
 
 .main-heading:hover::after {
-    animation: main-heading-after 0.8s, main-heading 0.8s;
-    animation-fill-mode: forwards;
+    animation-name: main-heading-after, main-heading;
 }
 
 @media (max-width: 425px) {
@@ -128,6 +131,6 @@
 
 /* paddings */
 .section-ptb {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: var(--main-padding, 100px);
+    padding-bottom: var(--main-padding, 100px);
 }
