@@ -76,41 +76,43 @@
     right: -30px;
 }
 
-@keyframes main-heading-before {
+@keyframes main-heading {
     50% {
-        border-radius: 0;
-        left: 0;
-        height: 20%;
+        border-radius: 40%;
+        height: 40%;
     }
     100% {
         border-radius: 0;
         height: 100%;
         width: 100%;
+    }
+}
+
+@keyframes main-heading-before {
+    50% {
+        left: 0;
+    }
+    100% {
         left: 0;
     }
 }
 
 .main-heading:hover::before {
-    animation: main-heading-before 0.8s;
+    animation: main-heading-before 0.8s, main-heading 0.8s;
     animation-fill-mode: forwards;
 }
 
 @keyframes main-heading-after {
     50% {
-        border-radius: 0;
         right: 0;
-        height: 20%;
     }
     100% {
-        border-radius: 0;
-        height: 100%;
-        width: 100%;
         right: 0;
     }
 }
 
 .main-heading:hover::after {
-    animation: main-heading-after 0.8s;
+    animation: main-heading-after 0.8s, main-heading 0.8s;
     animation-fill-mode: forwards;
 }
 
