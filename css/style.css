@@ -323,10 +323,6 @@ header ul li:last-child div input:is(:checked) + label + .mega-menu {
 
 /* --------------- */
 /* articles section */
-.articles {
-  
-}
-
 .articles .container {
   display: grid;
   gap: 40px;
