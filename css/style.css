@@ -202,9 +202,6 @@ header ul li:last-child div input:is(:checked) + label + .mega-menu {
 }
 
 @media (max-width: 800px) {
-  header {
-    position: absolute;
-  }
   header .container nav > ul > li:nth-child(-n+3) {
     display: none;
   }
@@ -225,7 +222,10 @@ header ul li:last-child div input:is(:checked) + label + .mega-menu {
   }
   .container .mega-menu ul:first-of-type li:nth-child(-n+3) {
     display: block;
-  }  
+  }
+  .container .mega-menu ul li a {
+    padding: 10px 20px;
+  }
   .container .mega-menu ul:first-of-type li:last-child a {
     border-bottom: var(--main-color-bg) 1.5px solid;
   }
@@ -244,10 +244,10 @@ header ul li:last-child div input:is(:checked) + label + .mega-menu {
   content: "";
   position: absolute;
   left: 0;
-  top: 0;
+  top: -40px;
   z-index: -1;
   width: 100%;
-  height: calc(100% - 50px);
+  height: 100%;
   background-color: var(--main-color-bg);
   transform-origin: top left;
   transform: skewY(-6deg);
@@ -321,3 +321,6 @@ header ul li:last-child div input:is(:checked) + label + .mega-menu {
       transform: translateY(-15px);
   }
 }
+
+/* --------------- */
+/* articles section */
