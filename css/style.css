@@ -14,14 +14,6 @@
   --transition-duration: 0.3s;
 }
 
-body {
-  font-family: cairo;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 /* header */
 header {
   user-select: none;
