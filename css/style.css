@@ -449,15 +449,14 @@ header ul li:last-child div input:is(:checked) + label + .mega-menu {
   padding: calc(var(--sub-padding) - 10px);
   background-color: white;
   box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%), 0px 2px 4px 0px rgb(0 0 0 / 12%);
+}
+
+.gallery .container .image {
   position: relative;
   overflow: hidden;
 }
 
-.gallery .container .image {
-  overflow: hidden;
-}
-
-.gallery .container .card::before {
+.gallery .container .image::before {
   content: "";
   position: absolute;
   inset: 50% auto auto 50%;
@@ -470,7 +469,7 @@ header ul li:last-child div input:is(:checked) + label + .mega-menu {
   border-radius: 50%;
 }
 
-.gallery .container .card:hover::before {
+.gallery .container .image:hover::before {
   animation: flashing 0.7s;
 }
 
@@ -490,6 +489,6 @@ header ul li:last-child div input:is(:checked) + label + .mega-menu {
   display: block;
 }
 
-.gallery .container .card:hover img {
+.gallery .container .image:hover img {
   transform: scale(1.2) rotate(6deg);
 }
