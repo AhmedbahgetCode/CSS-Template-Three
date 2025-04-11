@@ -529,7 +529,7 @@ header ul li:last-child div input:is(:checked) + label + .mega-menu {
 }
 
 .features .card:hover .image::after {
-  clip-path: polygon(0% 0%, 100% 100%, -30% 100%);
+  clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
 }
 
 .features .card:hover a {
@@ -563,7 +563,7 @@ header ul li:last-child div input:is(:checked) + label + .mega-menu {
   width: 130%;
   background-color: #ffffff;
   height: 170px;
-  clip-path: polygon(100% 0%, 100% 100%, -30% 100%);
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
   transition: clip-path var(--transition-duration);
 }
 
