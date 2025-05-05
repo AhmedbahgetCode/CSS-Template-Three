@@ -415,7 +415,6 @@ header ul li:last-child div input:is(:checked) + label + .mega-menu {
   font-size: 20px;
 }
 
-/* --------------- */
 /* gallery section */
 .gallery {
   background-color: var(--main-color-bg);
@@ -442,7 +441,7 @@ header ul li:last-child div input:is(:checked) + label + .mega-menu {
 }
 
 .gallery::after {
-  bottom: 0; /* Correct placement */
+  bottom: 0;
   background-image: conic-gradient(
     from 135deg,
     white 25%,
@@ -502,7 +501,7 @@ header ul li:last-child div input:is(:checked) + label + .mega-menu {
   transform: scale(1.2) rotate(6deg);
 }
 
-/* --------------- */
+
 /* features section */
 .features .container {
   display: grid;
@@ -619,4 +618,49 @@ header ul li:last-child div input:is(:checked) + label + .mega-menu {
   height: 100%;
   background-color: var(--color);
   transition: var(--transition-duration);
+}
+
+/* testimonials */
+.testimonials {
+  background-color: var(--main-color-bg);
+}
+
+.testimonials .rate {
+  color: #ffc108;
+  margin: 5px 0 5px 0;
+}
+
+.testimonials .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+.testimonials .card {
+  position: relative;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.testimonials .card h3 {
+  text-transform: capitalize;
+}
+
+.testimonials .card p {
+  color: #777;
+  margin-top: 5px;
+}
+
+.testimonials .card .image-holder {
+  position: absolute;
+  top: -50px;
+  right: -5px;
+  width: 95px;
+  border-radius: 50%;
+}
+
+.testimonials .card img {
+  border-radius: 50%;
+  border: var(--main-color-bg) solid 10px;
 }
