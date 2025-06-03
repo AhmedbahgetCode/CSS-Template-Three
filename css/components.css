@@ -40,7 +40,7 @@
 /* headings */
 .main-heading {
     width: fit-content;
-    margin: 0 auto 100px auto;
+    margin: 0 auto 70px auto;
     padding: 1rem 1.2rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -139,4 +139,10 @@
 .section-ptb {
     padding-top: var(--main-padding, 100px);
     padding-bottom: var(--main-padding, 100px);
+}
+
+/* gird 3 columns */
+.grid-three-col {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
