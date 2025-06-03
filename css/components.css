@@ -51,13 +51,13 @@
     position: relative;
     z-index: 1;
     cursor: default;
-    transition: 0.1s 0s;
+    transition: 0.2s;
 }
 
 .main-heading:hover {
     color: white;
     border-color: transparent;
-    transition: 0.5s 0.4s;
+    transition: 0.5s 0.5s;
 }
 
 .main-heading::before,
@@ -72,6 +72,7 @@
     background-color: var(--main-color);
     border-radius: 50%;
     transition: 0.5s;
+    pointer-events: none;
 }
 
 .main-heading::before {
@@ -82,9 +83,17 @@
     right: -30px;
 }
 
+.main-heading:hover::before,
+.main-heading:hover::after {
+    animation: 1s forwards;
+}
+.main-heading:hover::before {
+    animation-name: main-heading-before, main-heading;
+}
+
 @keyframes main-heading {
     50% {
-        border-radius: 20px;
+        border-radius: 0;
         height: 50%;
     }
     100% {
@@ -101,15 +110,6 @@
     100% {
         left: 0;
     }
-}
-
-.main-heading:hover::before,
-.main-heading:hover::after {
-    animation: 1s forwards;
-}
-
-.main-heading:hover::before {
-    animation-name: main-heading-before, main-heading;
 }
 
 @keyframes main-heading-after {
