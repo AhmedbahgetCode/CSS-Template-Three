@@ -67,7 +67,7 @@
     z-index: -1;
     top: 50%;
     transform: translateY(-50%);
-    width: 15px;
+    width: 10px;
     aspect-ratio: 1;
     background-color: var(--main-color);
     border-radius: 50%;
@@ -76,16 +76,16 @@
 }
 
 .main-heading::before {
-    left: -30px;
+    left: -20px;
 }
 
 .main-heading::after {
-    right: -30px;
+    right: -20px;
 }
 
 .main-heading:hover::before,
 .main-heading:hover::after {
-    animation: 1s forwards;
+    animation: 0.5s forwards;
 }
 .main-heading:hover::before {
     animation-name: main-heading-before, main-heading;
