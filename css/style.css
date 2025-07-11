@@ -1230,11 +1230,10 @@ header .mega-menu ul li::after {
   --bg-color: #ebebeb;
   background: var(--bg-color);
   border: 1px solid var(--bg-color);
-  /* flex-wrap: wrap; */
 }
 
 .vedios .vedios-container nav {
-  min-width: 300px;
+  min-width: min(300px, 100%);
   flex: 1;
 }
 
