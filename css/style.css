@@ -1223,3 +1223,75 @@ header .mega-menu ul li::after {
 .pricing .card button a {
   color: var(--main-color);
 }
+
+/* top vedios */
+.vedios .vedios-container {
+  display: flex;
+  --bg-color: #ebebeb;
+  background: var(--bg-color);
+  border: 1px solid var(--bg-color);
+  /* flex-wrap: wrap; */
+}
+
+.vedios .vedios-container nav {
+  min-width: 300px;
+  flex: 1;
+}
+
+.vedios .vedios-container nav > h2 {
+  background-color: #e2e2e2;
+  font-size: 1.3rem;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.vedios .vedios-container ul {
+  background: white;
+  list-style: none;
+}
+
+.vedios .vedios-container ul li {
+  padding: 15px 25px;
+  border-top: 1px solid var(--bg-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.vedios .vedios-container ul li span  {
+  color: #777;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.vedios aside {
+  padding: 10px;
+  max-width: 800px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.vedios aside .image-container {
+  max-width: 100%;
+}
+
+.vedios .vedios-container aside p {
+  background: white;
+  padding: 20px;
+  margin-top: auto;
+}
+
+@media (max-width: 769px) {
+  .vedios .vedios-container {
+    flex-wrap: wrap;
+  }
+
+  .vedios .vedios-container aside {
+    order: -1;
+  }
+
+  .vedios .vedios-container aside p {
+    display: none;
+  }
+}
